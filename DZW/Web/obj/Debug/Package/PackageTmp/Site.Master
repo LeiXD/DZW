@@ -1,0 +1,367 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Web.Site"
+    EnableTheming="true" %>
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
+<%@ Register Src="Controls/ucCommodityLogin.ascx" TagName="ucCommodityLogin" TagPrefix="uc1" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>等折网-您身边的购物顾问</title>
+    <link href="Styles/Master.css" rel="stylesheet" type="text/css" />
+    <script src="Scripts/jquery-1.4.1.min.js" type="text/javascript"></script>  
+    <script src="Scripts/jquery.boxy.js" type="text/javascript"></script>
+    <link href="Styles/boxy.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript">
+        function fclick(obj) {
+            with (obj) {
+                style.posTop = event.srcElement.offsetTop;
+                var x = event.x - offsetWidth / 2;
+                if (x < event.srcElement.offsetLeft)
+                    x = event.srcElement.offsetLeft;
+                if (x > event.srcElement.offsetLeft + event.srcElement.offsetWidth - offsetWidth)
+                    x = event.srcElement.offsetLeft + event.srcElement.offsetWidth - offsetWidth;
+                style.posLeft = x;
+            }
+        }
+        function preview(image) {
+            if ("Microsoft Internet Explorer" == navigator.appName) {
+                document.getElementById("image").style.display = "none";
+                document.getElementById("preview").filters.item("DXImageTransform.Microsoft.AlphaImageLoader").src = image.value;
+            } else if ("Netscape" == navigator.appName) {
+                document.getElementById("image").src = image.files[0].getAsDataURL();
+            } else {
+            }
+        }
+        function showMsg(sMsg) {
+            Boxy.alert(sMsg, null, { title: "提示信息" });
+        }
+    </script>    
+    <style type="text/css">
+        #preview
+        {
+            width: 100px;
+            height: 100px;
+        }
+        .upload
+        {
+            text-align: right;
+            position: relative;
+            margin-top: -24px;
+            z-index: 1;
+            filter: alpha(opacity=0);
+            -moz-opacity: 0;
+            -khtml-opacity: 0;
+            opacity: 0;
+        }
+    </style>
+    <!--[if IE]>
+        <style>
+            #preview 
+            {
+                filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=scale);
+            }
+        </style>
+    <![endif]-->
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <asp:ScriptManager ID="ScriptManager1" runat="server">
+    </asp:ScriptManager>
+    <div class="Container">
+        <table class="Header" cellpadding="0" cellspacing="0">
+            <tr>
+                <td style="width: 40px">
+                    &nbsp;
+                </td>
+                <td style="height:40px">
+                    &nbsp;
+                </td>
+                <td style="width:20px">
+                    &nbsp;
+                </td>
+                <td style="width:110px">
+                    &nbsp;</td>
+                <td style="width:40px">
+                    &nbsp;</td>
+                <td style="width:540px; text-align:right; padding-right:40px;" colspan="2">                    
+                <asp:ImageButton ID="ibtnHelper" runat="server" ImageUrl="~/Styles/Image/helpbtn.png" />&nbsp;</td>
+                <td>
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td style="width: 40px" rowspan="7">
+                </td>
+                <td style="width: 260px" rowspan="7">
+                    <asp:Image ID="Image2" runat="server" ImageUrl="~/Styles/Image/sitename.png" />
+                </td>
+                <td rowspan="7">
+                </td>
+                <td rowspan="4" style=" vertical-align:bottom">
+                    <asp:Label ID="Label2" runat="server" Text="Welcome!" Font-Size="14pt"></asp:Label>
+                </td>
+                <td rowspan="7">
+                    &nbsp;</td>
+                <td style="height:20px" colspan="2">
+                        <asp:Label ID="Label13" runat="server" Text="您已关注的品牌" CssClass="lblTitle"></asp:Label>
+                    </td>
+                <td rowspan="7">
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <ul class="ulBrand">
+                        <li>ASOS</li>
+                        <li>您的品牌</li>
+                        <li>您的品牌</li>
+                        <li>您的品牌</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <ul class="ulBrand">
+                        <li>ASOS</li>
+                        <li>您的品牌</li>
+                        <li>您的品牌</li>
+                        <li>您的品牌</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <ul class="ulBrand">
+                        <li>ASOS</li>
+                        <li>您的品牌</li>
+                        <li>您的品牌</li>
+                        <li>您的品牌</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="3" style=" vertical-align:top">
+                    <asp:LinkButton ID="lbName" runat="server" CssClass="lbLink" Font-Size="14pt">Candy</asp:LinkButton>
+                    <br />
+                    <asp:Label ID="Label5" runat="server" Text="积分 " Font-Size="14pt"></asp:Label>
+                    <asp:LinkButton ID="lbIntegral" runat="server" CssClass="lbLink" Font-Size="14pt">0</asp:LinkButton>
+                </td>
+                <td style="height:10px;" colspan="2">
+                    </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                        <asp:Label ID="Label14" runat="server" Text="也许您也喜欢" CssClass="lblTitle"></asp:Label>
+                    </td>
+            </tr>
+            <tr>
+                <td>
+                    <ul class="ulBrand" style="width:400px;">
+                        <li><a href="BrandCommodity.aspx">ASOS</a></li>
+                        <li>ASOS</li>
+                        <li>ASOS</li>
+                    </ul>
+                        <asp:Button ID="btnMoreBrand0" Text="更多" runat="server" CssClass="btn2" Width="50px"
+                            BorderStyle="None" />
+                </td>
+                <td>
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td style="width: 40px">
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+                <td colspan="2">
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+            </tr>
+        </table>        
+        <div class="HeaderBelow">
+        </div>
+        <div class="Content">
+            <div class="leftContent">
+                <table class="tblService">
+                    <tr>
+                        <td class="tdCaption" style="width: 80px">
+                            <asp:Label ID="Label10" runat="server" Text="  专属客服"></asp:Label>
+                        </td>
+                        <td>
+                            <asp:Label ID="lblSerName" runat="server" Text="  专属客服"></asp:Label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tdCaption">
+                            <asp:Label ID="Label11" runat="server" Text="  QQ"></asp:Label>
+                        </td>
+                        <td>
+                            <asp:Label ID="lblSerQQ" runat="server" Text="  专属客服"></asp:Label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tdCaption">
+                            <asp:Label ID="Label12" runat="server" Text="  电话"></asp:Label>
+                        </td>
+                        <td>
+                            <asp:Label ID="lblSerPhone" runat="server" Text="  专属客服"></asp:Label>
+                        </td>
+                    </tr>
+                </table>
+                <table class="tblComLogin" style="width: 275px">
+                    <tr>
+                        <td colspan="3" class="tdTitle">
+                            商品信息登录
+                        </td>
+                    </tr>
+                    <tr class="trComLogin">
+                        <td class="tdCaption" style="width:80px">
+                            <asp:Label ID="Label1" runat="server" Text="  品牌名"></asp:Label>
+                        </td>
+                        <td colspan="2">
+                            <asp:TextBox ID="tbBrandName" runat="server"></asp:TextBox>
+                        </td>
+                    </tr>
+                    <tr class="trComLogin">
+                        <td class="tdCaption">
+                            <asp:Label ID="Label9" runat="server" Text="  牌号"></asp:Label>
+                        </td>
+                        <td colspan="2">
+                            <asp:TextBox ID="tbCommodityCode" runat="server"></asp:TextBox>
+                        </td>
+                    </tr>
+                    <tr class="trComLogin">
+                        <td class="tdCaption">
+                            <asp:Label ID="Label6" runat="server" Text="  心愿价"></asp:Label>
+                        </td>
+                        <td colspan="2">
+                            <asp:TextBox ID="tbWishPrice" runat="server" MaxLength="20"></asp:TextBox>
+                            <asp:FilteredTextBoxExtender ID="FilteredTextBoxExtender1" runat="server" TargetControlID="tbWishPrice"
+                                ValidChars=".0123456789">
+                            </asp:FilteredTextBoxExtender>
+                        </td>
+                    </tr>
+                    <tr class="trComLogin">
+                        <td class="tdCaption">
+                            <asp:Label ID="Label7" runat="server" Text="  图片上传"></asp:Label>
+                        </td>
+                        <td colspan="2">
+                            <div style="width: 160px; overflow: hidden">
+                                <div style="z-index: 2; height: 24px">
+                                    <asp:TextBox ID="tbUrl" runat="server" Enabled="false" Width="100px"></asp:TextBox>
+                                    <asp:Button ID="btnBrowse" runat="server" Text="浏览" OnClientClick="fclick(btnBrowse)" Width="50px" CssClass="btn1" />
+                                </div>
+                                <div class="upload">
+                                    <asp:FileUpload ID="FileUpload1" runat="server" Height="24px" onchange="preview(this);"
+                                        Width="55px" onpropertychange="tbUrl.value=this.value;" />
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            &nbsp;
+                        </td>
+                        <td style="width:100px; ">
+                            <div id="preview">
+                                <img id="image" alt="" class="imgComLogin" height="100" width="100" src="Styles/Image/defaultimg.png" />
+                            </div>
+                        </td>
+                        <td style="vertical-align:bottom;">
+                            <asp:Button ID="btnUpload" runat="server" Text="上传" CssClass="btn1" OnClick="btnUpload_Click" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tdCaption">
+                            <asp:Label ID="Label8" runat="server" Text="  备注"></asp:Label>
+                        </td>
+                        <td colspan="2">
+                            <asp:TextBox ID="tbDescription" runat="server" TextMode="MultiLine" Rows="4" Width="150px"></asp:TextBox>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        </td>
+                        <td class="tdConfirm" colspan="2">
+                            <asp:Button ID="btnConfirm" runat="server" Text="确认" CssClass="btnComfirm" OnClick="btnConfirm_Click" />
+                        </td>
+                    </tr>
+                </table>
+                <table class="tblMenu">
+                    <tr>
+                        <td>
+                            <asp:Button ID="btnPersonal" runat="server" Text="个人主页" PostBackUrl="~/PersonalPage.aspx" CssClass="btnMenu" />
+                        </td>
+                        <td>
+                            <asp:Button ID="btnChecked" runat="server" Text="我等折的宝贝" CssClass="btnMenu" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <asp:Button ID="btnUserInfo" runat="server" Text="我的资料" CssClass="btnMenu" />
+                        </td>
+                        <td>
+                            <asp:Button ID="btnWish" runat="server" Text="我的心愿本" CssClass="btnMenu" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <asp:Button ID="btnIntegral" runat="server" Text="我的积分" CssClass="btnMenu" />
+                        </td>
+                        <td>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="rightContent">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+        <div class="Category">
+            <table class="tblCategory" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td>
+                        <table class="brandlist" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td class="lcCaption">
+                                    女<br />
+                                    装
+                                </td>
+                                <td class="lcList">
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td class="midCategory">
+                    </td>
+                    <td>
+                        <table class="brandlist" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td class="lcCaption">
+                                    女<br />
+                                    鞋
+                                </td>
+                                <td class="lcList">
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div style=" display:none;">
+        <asp:HiddenField ID="hfImgUrl" runat="server" /></div>
+    </form>
+</body>
+</html>

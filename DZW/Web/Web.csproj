@@ -59,6 +59,8 @@
     <Content Include="Account\ChangePasswordSuccess.aspx" />
     <Content Include="Account\Login.aspx" />
     <Content Include="Account\Register.aspx" />
+    <Content Include="BrandCommodity.aspx" />
+    <Content Include="CommodityDetail.aspx" />
     <Content Include="Controls\ucCheckedCommodity.ascx" />
     <Content Include="Controls\ucCommodity.ascx" />
     <Content Include="Controls\ucCommodityLogin.ascx" />
@@ -129,6 +131,7 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
+    <Content Include="WebForm1.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="About.aspx.cs">
@@ -165,6 +168,20 @@
     </Compile>
     <Compile Include="Account\Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BrandCommodity.aspx.cs">
+      <DependentUpon>BrandCommodity.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BrandCommodity.aspx.designer.cs">
+      <DependentUpon>BrandCommodity.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CommodityDetail.aspx.cs">
+      <DependentUpon>CommodityDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CommodityDetail.aspx.designer.cs">
+      <DependentUpon>CommodityDetail.aspx</DependentUpon>
     </Compile>
     <Compile Include="Controls\ucCheckedCommodity.ascx.cs">
       <DependentUpon>ucCheckedCommodity.ascx</DependentUpon>
@@ -244,6 +261,13 @@
     </Compile>
     <Compile Include="TableManager\AddBrandCommodity.aspx.designer.cs">
       <DependentUpon>AddBrandCommodity.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

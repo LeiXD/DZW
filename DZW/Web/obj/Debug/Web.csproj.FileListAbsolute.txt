@@ -27,6 +27,3 @@ G:\Source Code\DZW\Web\bin\Web.pdb
 G:\Source Code\DZW\Web\obj\Debug\ResolveAssemblyReference.cache
 G:\Source Code\DZW\Web\obj\Debug\Web.dll
 G:\Source Code\DZW\Web\obj\Debug\Web.pdb
-C:\Users\Administrator\Desktop\Source Code\DZW\Web\obj\Debug\ResolveAssemblyReference.cache
-C:\Users\Administrator\Desktop\Source Code\DZW\Web\obj\Debug\Web.dll
-C:\Users\Administrator\Desktop\Source Code\DZW\Web\obj\Debug\Web.pdb

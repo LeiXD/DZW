@@ -1,0 +1,200 @@
+﻿body {
+}
+.bcom
+{
+    width: 600px;
+    clear: both;
+    margin-left:50px;
+}
+.bctop
+{
+    clear: both;
+    padding: 0px;
+    height: 152px;
+    padding-top:2px;
+    background-image: url('Image/brandbk.png');
+    background-repeat: no-repeat;
+    color:White;
+    font-weight:bold;
+    text-align:center;
+}
+.brandlogo
+{
+    width: 150px;
+    height: 150px;
+    float: left;
+    padding: 0px 1px 1px 1px;
+    margin: 0px;
+}
+.brandad
+{
+    float: left;
+    height: 148px;
+    width:445px;
+    margin:0px;
+    border:1px solid silver;
+}
+.bComm
+{
+    clear: both;
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 342px;
+    background-image: url('Image/detailborder.png');
+}
+.bCommImg
+{
+    float: left;
+    width: 280px;
+    height: 339px;
+    padding:2px 1px 3px 1px;
+    background-image: url('Image/com_detail_border.png');
+    background-repeat: no-repeat;
+}
+.bCommInfo
+{
+    float: left;
+    padding-top: 5px;
+    background-image: url('Image/shade.png');
+    background-repeat: repeat-y;
+    height:338px;
+}
+.trInfo
+{
+    height:30px;
+}
+.tbLeft
+{
+    text-align: right;
+    padding-right:5px;
+    width:100px;
+    font-weight:bold;
+    height:35px;
+    font-size:12pt;
+    border-bottom:1px dashed silver;
+}
+.tbRight
+{
+    text-align: left;
+    padding-left: 10px;
+    font-size:12pt;
+    border-bottom:1px dashed silver;
+    color:#13a89e;
+}
+.tbLeftNoLine
+{
+    text-align: right;
+    padding-right:5px;
+    width:100px;
+    font-weight:bold;
+    font-size:12pt;
+}
+.tbRightNoLine
+{
+    text-align: left;
+    padding-left: 10px;
+    font-size:12pt;
+    color:Blue;
+}
+
+.comTitle
+{
+    padding-top:20px;
+    padding-bottom:20px;
+    vertical-align:middle;
+    width:100%;
+}
+.bComSend
+{
+    text-align:right;
+    padding-top:10px;
+    width:100%;
+    clear:both;
+}
+.btnSend
+{
+    background-image: url('Image/send.png');
+    background-repeat: no-repeat;
+    border-style: none;
+    width:125px;
+    height:28px;
+    color:White;
+    font-weight:bold;
+}
+.bComSend a
+{
+    color:Black;
+    text-decoration:none;
+}
+.uplog
+{
+	color: White;
+	background-image: url('Image/s_type.png');
+	background-repeat:no-repeat;
+	height: 20px;
+	vertical-align:baseline;
+}
+.moreCom
+{
+    text-align:right;
+    width:560px;
+    padding-top:10px;
+    padding-bottom:20px;
+}
+.btnMore
+{
+    background-image: url('Image/btn2.png');
+    background-repeat: no-repeat;
+    color: White;
+    text-align: center;
+    background-color: #58585A;    
+    height:24px;
+    cursor:pointer;
+    width:80px;
+}
+.bComItem
+{
+    height: 171px;
+    width: 140px;
+    background-image: url('Image/cuborder.png');
+    background-repeat: no-repeat;
+}
+.bComItemImg
+{
+    width:139px;
+    padding-left:1px;
+    padding-top:1px;
+    height:170px;
+    z-index:1;
+}
+.bComItemInfo
+{
+    background-color:Black;
+    filter:alpha(opacity=90); 
+    -moz-opacity:0.9;
+    -khtml-opacity: 0.9;
+    opacity: 0.9; 
+    height: 21px;
+    width: 140px;
+    font-size: 10pt;
+    margin-top:-21px;
+    z-index:2;
+    position:relative;
+}
+.bciOriPrice
+{
+    color:white;
+    text-decoration:line-through;
+    float:left;
+    width:68px;
+    padding: 4px 2px 0px 0px;
+    height:16px;
+}
+.bciCurPrice
+{
+    color:#ff9933;
+    width:70px;
+    float:left;   
+    padding: 4px 0px 0px 0px;
+    height:16px;
+}
