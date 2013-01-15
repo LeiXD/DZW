@@ -1,0 +1,32 @@
+G:\等折网\08 專案交付文件\Source Code\DZW\Web\bin\Web.dll
+G:\等折网\08 專案交付文件\Source Code\DZW\Web\bin\Web.pdb
+G:\等折网\08 專案交付文件\Source Code\DZW\Web\obj\Debug\ResolveAssemblyReference.cache
+G:\等折网\08 專案交付文件\Source Code\DZW\Web\obj\Debug\Web.dll
+G:\等折网\08 專案交付文件\Source Code\DZW\Web\obj\Debug\Web.pdb
+D:\現時文檔\DZW\Web\obj\Debug\ResolveAssemblyReference.cache
+D:\現時文檔\DZW\Web\obj\Debug\Web.dll
+D:\現時文檔\DZW\Web\bin\Web.dll
+D:\現時文檔\DZW\Web\bin\Web.pdb
+D:\現時文檔\DZW\Web\bin\zh-CHS\AjaxControlToolkit.resources.dll
+D:\現時文檔\DZW\Web\bin\zh-CHT\AjaxControlToolkit.resources.dll
+D:\現時文檔\DZW\Web\obj\Debug\Web.pdb
+D:\项目\等折网\08 專案交付文件\Source Code\DZW\Web\bin\Web.dll
+D:\项目\等折网\08 專案交付文件\Source Code\DZW\Web\bin\Web.pdb
+D:\项目\等折网\08 專案交付文件\Source Code\DZW\Web\obj\Debug\ResolveAssemblyReference.cache
+D:\项目\等折网\08 專案交付文件\Source Code\DZW\Web\obj\Debug\Web.dll
+D:\项目\等折网\08 專案交付文件\Source Code\DZW\Web\obj\Debug\Web.pdb
+I:\等折网\08 專案交付文件\Source Code\DZW\Web\obj\Debug\ResolveAssemblyReference.cache
+I:\等折网\08 專案交付文件\Source Code\DZW\Web\obj\Debug\Web.dll
+C:\Users\Candy\Desktop\Source Code\DZW\Web\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Candy\Desktop\Source Code\DZW\Web\obj\Debug\Web.dll
+C:\Users\Candy\Desktop\Source Code\DZW\Web\bin\Web.dll
+C:\Users\Candy\Desktop\Source Code\DZW\Web\bin\Web.pdb
+C:\Users\Candy\Desktop\Source Code\DZW\Web\obj\Debug\Web.pdb
+G:\Source Code\DZW\Web\bin\Web.dll
+G:\Source Code\DZW\Web\bin\Web.pdb
+G:\Source Code\DZW\Web\obj\Debug\ResolveAssemblyReference.cache
+G:\Source Code\DZW\Web\obj\Debug\Web.dll
+G:\Source Code\DZW\Web\obj\Debug\Web.pdb
+C:\Users\Administrator\Desktop\Source Code\DZW\Web\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\Source Code\DZW\Web\obj\Debug\Web.dll
+C:\Users\Administrator\Desktop\Source Code\DZW\Web\obj\Debug\Web.pdb

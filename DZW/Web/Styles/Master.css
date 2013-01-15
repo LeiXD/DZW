@@ -1,0 +1,356 @@
+﻿/* C0M10Y45K70   #62593b
+   C0M0Y0K40      #acacac*/
+
+body
+{
+    /*font-family: @黑体, @宋体, Arial;*/
+    background-color: #ffffff;
+    width: 100%;
+    color: #636363;
+    font-size:11pt;
+}
+/*******layout******/
+.Container
+{
+	width:1000px;
+	margin:0 auto 0 auto;	
+    vertical-align:top;
+}
+.Header
+{
+	height:170px;
+	width:1000px;
+	clear:both;
+    background-image: url('Image/line.png');
+    background-repeat: no-repeat;
+    background-position: 40px 40px;
+}
+.topHelper
+{
+    width:100%;
+    text-align:right;
+}
+.tabHeader
+{
+    background-position: 20px 10px;
+    width: 100%;
+    background-image: url('Image/line.png');
+    background-repeat: no-repeat;
+}
+.tblMenu
+{
+    margin-top:20px;
+}
+.cph1
+{
+    vertical-align:top;
+}
+.HeaderBelow
+{
+    background-position:center top;
+    background-image: url('Image/headingblow.png');
+    background-repeat: no-repeat;
+    height: 60px;
+}
+.Content
+{
+    width:900px;
+    padding:0px;
+    margin:0px auto 0px auto;
+    vertical-align:top;
+}
+.leftContent
+{
+    width:300px;    
+    padding:0px;
+    margin:0px;
+    vertical-align:top;
+    float:left;
+}
+.rightContent
+{
+    width:600px;
+    padding:0px;
+    margin:0px;
+    float:left;
+}
+.Category
+{
+    width:900px;
+    clear:both;
+    margin:0px auto 0px auto;
+    margin-top:10px;
+    border-top:1px dashed silver;
+}
+#Content2
+{
+    margin-bottom:10px;
+}
+.tblCategory
+{
+    width:880px;
+    margin:20px auto 20px auto;
+}
+.brandlist
+{
+    background-image: url('Image/listbg.png');
+    background-repeat:no-repeat;
+    width:425px;
+    height:240px;
+}
+.lcList
+{
+}
+.lcCaption
+{
+    width:40px;
+    vertical-align:middle;
+    text-align:center;
+    font-weight:bold;
+}
+.midCategory
+{
+    width:30px;
+}
+/********************/
+.tdHelp
+{
+    text-align:right;
+    width:60px;
+}
+.tdUserInfo
+{
+    width:150px;
+    vertical-align:bottom;
+}
+.tdSiteName
+{
+    width:280px;
+}
+.tdBrand
+{
+}
+.tdBrand ul
+{
+    display:block;
+    list-style:none;
+    color:#5a553a;
+    margin:0px 0px 0px 0px;
+    float:left;
+    clear:both;
+}
+.tdBrand ul li
+{
+    float: left;
+    width:120px;
+}
+.tblService
+{
+}
+.leftService
+{
+    width:100px;
+}
+.tdCaption
+{
+    text-align:right;
+    font-weight:bold;
+    padding-right:5px;
+    font-size:11pt;
+}
+/********label style***************/
+.lblTitle
+{
+    color:#636363;
+    font-weight: bold;
+    font-size:16pt;
+}
+.lbLink
+{
+    text-decoration: none;
+    color:#13a89e;
+}
+.fileUpload
+{
+    
+}
+/********Commodity Login**************************/
+.tblComLogin
+{
+    cursor:url('Cursor/Xeo_link.ani') text;
+    border-color:Gray;
+    border-width:2px;
+    border-style:solid;
+    margin-top:20px;
+}
+.trComLogin
+{
+    border-bottom-color:Silver;
+    border-bottom:1px solid Silver;
+}
+.tdTitle
+{
+    text-align:center;
+    font-weight:bold;
+}
+.tdConfirm
+{
+    text-align:right;
+    padding-right:20px;
+}
+/********Image**************************/
+.imgComLogin
+{
+    width:100px;
+    height:100px;
+}
+/********Button**************************/
+.btn1
+{
+    background-image: url('Image/btn1.png');
+    background-repeat: no-repeat;
+    color:White;
+    height:24px;
+    border:0 none white;
+    width:50px;
+}
+.btn2
+{
+    /*background-image: url('Image/btn2.png');
+    background-repeat: no-repeat;*/
+    color: White;
+    text-align: center;
+    background-color: #58585A;    
+    height:18px;
+    cursor:pointer;
+}
+.btnComfirm
+{
+    background-image: url('Image/btn1.png');
+    background-repeat: no-repeat;
+    color:White;
+    width:70px;
+    height:24px;
+    vertical-align:middle;
+}
+.btnHelper
+{
+    background-position:top;
+    background-image: url('Image/helpbtn.png');
+    background-repeat: no-repeat;
+    height: 40px;
+    width: 70px;
+    font-weight: bold;
+    color:White;
+    text-align:center;
+    vertical-align:middle;
+    cursor:pointer;
+    border:0px;
+}
+.btnMenu
+{
+    /*font-family: @微软雅黑, @宋体, Arial;*/
+    background-image: url('Image/btnMenu.png');
+    background-repeat: no-repeat;
+    height:38px;
+    width:122px;
+    text-align: center;
+    font-size:11pt;
+    cursor:pointer;
+}
+.btnContract
+{
+    background-image: url('Image/contact1.png');
+    background-repeat: no-repeat;
+}
+/******************************/
+.tblCheckedCommodity
+{
+    width: 190px;
+    /*padding:7px 0px 0px 6px;*/
+    background-image: url('Image/checkedbg.png');
+    background-repeat: no-repeat;
+    height:300px;
+    padding:0px;
+}
+.trCheckedCommodity
+{
+    height: 206px;
+    padding:0px;
+    margin:0px;
+}
+.tdCheckedImage
+{
+    padding:5px 0px 0px 6px;
+    marker-offset:0px;
+    height:200px;
+    margin:0px;
+}
+.imgCheckedImage
+{
+    margin:0px;
+}
+.tdCCCaption
+{
+    width:55px;
+    text-align:right;
+    padding-right:10px;
+}
+.lblWishPrice
+{
+    color:#13a89e;
+}
+/*********************/
+.perTop
+{
+}
+.transparent_class
+{
+    filter:alpha(opacity=50); 
+    -moz-opacity:0.5;
+    -khtml-opacity: 0.5;
+    opacity: 0.5; 
+}
+.tblCheckingItem
+{
+    width: 190px;
+    padding:2px 0px 0px 2px;
+    background-image: url('Image/checkingbg.png');
+    background-repeat: no-repeat;
+    height:205px;
+}
+.ulBrand
+{   
+    display:block;
+    list-style:none;
+    margin:0px 0px 0px 0px;
+    float:left;
+    width: 500px;
+    clear:both;
+    height:15px;
+}
+.ulBrand li
+{
+    float: left;
+    width: 120px;
+    color: #13a89e;
+}
+.ulBrand li a
+{
+    float: left;
+    width: 120px;
+    color: #13a89e;
+    text-decoration:none;
+}
+.ulBrand li a:visited
+{
+    float: left;
+    width: 120px;
+    color:#f7941d;
+    text-decoration:none;
+}
+.tdTitle20
+{
+    vertical-align:top;
+    height:20px;
+}
